@@ -1,0 +1,25 @@
+| Error               | Meaning                                        |
+| ------------------- | ---------------------------------------------- |
+| `ValueError`        | Wrong value                                    |
+| `TypeError`         | Wrong data type                                |
+| `ZeroDivisionError` | Number ko zero se divide karna                 |
+| `FileNotFoundError` | File nahi mili                                 |
+| `KeyError`          | Dictionary/DataFrame mein key/column nahi mila |
+| `IndexError`        | Invalid index                                  |
+| `NameError`         | Variable exist nahi karta                      |
+| `AttributeError`    | Object mein required attribute/method nahi     |
+| `ImportError`       | Import related problem                         |
+
+
+                 ERROR HANDLING
+                       |
+        ┌──────────────┼──────────────┐
+        ↓              ↓              ↓
+       try           except          finally
+        |              |               |
+   risky code      error handle      always runs
+                       |
+                 ┌─────┴─────┐
+                 ↓     ↓     ↓
+              Value  Type   File
+              Error  Error  Error
